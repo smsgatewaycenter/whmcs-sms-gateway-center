@@ -1,7 +1,7 @@
 # whmcs-sms-gateway-center
 SMS Module for WHMCS
 
-This module is folked from https://github.com/shibby/WHMCS-SmsModule 
+This module is forked from https://github.com/shibby/WHMCS-SmsModule 
 
 
 Open Source SMS Module for WHMCS Automation.
