@@ -1,9 +1,5 @@
-# whmcs-sms
+# whmcs-sms-gateway-center
 SMS Module for WHMCS
-
-- Added infobip suport 
-- working well with WHMCS 6.3
-- Minor bug fixes
 
 This module is folked from https://github.com/shibby/WHMCS-SmsModule 
 
@@ -20,25 +16,13 @@ Installation
     Add a field: name=GSM Number, type=Text Box, Show on Order Form=check. (This field will be shown at register page. Sms will send to this value that user fills.)
 
     Enter Menu->Addons->Aktuel Sms
-    Write WHMCS Path and Select SMS Gateway. Write your api details.
+    Write WHMCS Path and Select SMS Gateway Center. Write your user credentials details.
 
-Supported SMS Gateways
-
-    ClickAtell (Global)
-    NetGsm (Turkey)
-    UcuzSmsAl (Turkey)
-    Mutlucell (Turkey)
-    Dakik SMS (Turkey)
-    msg91.com (India)
-    bytehand.com (Global, Russian)
-    1sms.com.tr (Türkiye)
-    smsGateway.me (Global -> use your own android device to send SMS via API call)
-    SendSms.ro (Romania, Global)
-    Infobip (see evmaksms)
+NOTE: We have deleted other senders which exists in actual repo to avoid confusions with our own clients.
 
 Supported Hooks
 
-    ClientChangePassword: Send sms to user if changes account password
+    ClientChangePassword: Send SMS to user if changes account password
     TicketAdminReply: Send sms to user if admin replies user's ticket
     ClientAdd: Send sms when user register
     AfterRegistrarRegistration: Send sms to user when domain registred succesfully
@@ -56,3 +40,5 @@ Supported Hooks
     InvoiceCreated: Send sms every invoice creation.
     AfterModuleChangePassword: After module change password.
     InvoicePaid: Whenyou have paidthe billsends a message.
+
+
